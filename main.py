@@ -1,6 +1,7 @@
-import discord
 import discord,os,asyncio
 from discord.ext import commands
+game=discord.Game("글링아 도움")
+bot = commands.Bot(command_prefix='글링아 ',status=discord.Status.online, activity=game)
 
 @bot.event
 async def on_ready():
